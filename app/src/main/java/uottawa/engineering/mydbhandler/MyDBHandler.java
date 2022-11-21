@@ -9,11 +9,6 @@ import android.database.Cursor;
 
 public class MyDBHandler extends SQLiteOpenHelper{
 
-    String _id;
-    String _productname;
-    String _sku;
-
-
     private static final int DATABASE_VERSION = 1;
     private static final String DATABASE_NAME = "productDB.db";
     private static final String TABLE_PRODUCTS = "products";
@@ -86,23 +81,5 @@ public class MyDBHandler extends SQLiteOpenHelper{
         return result;
     }
 
-    public void setId(String id) {
-        _id = id;
-    }
-    public String getId() {
-        return _id;
-    }
-    public void setProductName(String productname) {
-        _productname = productname;
-    }
-    public String getProductName() {
-        return _productname;
-    }
-    public void setSku(String sku){
-        _sku = sku;
-    }
-    public String getSku(){
-        return _sku;
-    }
 
 }
